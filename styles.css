@@ -1,0 +1,592 @@
+/*-------------------------------------------------- GLOBALS --------------------------------------------------*/
+/*---------- GLOBAL STYLES ! ----------*/
+html {
+    background-color: rgb(18, 18, 18);
+}
+
+
+.content {
+    position           : center;
+    padding-left       : 3rem;
+    padding-right      : 3rem;
+    /* background-color: rgb(109, 177, 186); */
+}
+
+
+/*--------------------*/
+.subheader-page {
+    display         : flex;
+    width           : 100%;
+    top             : 0;
+    padding-top     : 4vh;
+    padding-bottom  : 5vh;
+    z-index         : 9999;
+    background-color: rgb(18, 18, 18);
+}
+
+
+/*--------------------*/
+.logo {
+    position : absolute;
+    left     : 50%;
+    transform: translateX(-50%);
+}
+
+
+/*--------------------*/
+.close {
+    position: absolute;
+    right   : 80px;
+}
+
+
+/*---------- WHITE BACKGROUND LINE ! ----------*/
+body::before {
+    content         : '';
+    position        : fixed;
+    top             : 0;
+    left            : 50%;
+    width           : 1px;
+    height          : 100%;
+    background-color: rgb(238, 238, 238);
+    z-index         : -1;
+}
+
+
+/*--------------------*/
+.c-black {
+    color: rgb(18,18,18);
+}
+
+
+/*--------------------*/
+li {
+    list-style-type: none;
+    line-height    : 3rem;
+}
+
+
+/*--------------------*/
+.lineHeight {
+    line-height: 2.8rem;
+}
+
+
+/*-------------------------------------------------- CARDS --------------------------------------------------*/
+/*--------------------*/
+.card {
+    position        : absolute;
+    top             : 120px;
+    left            : 74%;
+    transform       : translateX(-50%);
+    width           : 40vw;
+    /* z-index      : 9999; */
+    padding         : 0 24 320 24;
+    background-color: rgb(18,18,18);
+}
+
+
+/*--------------------*/
+/* .cardProject {
+  position: absolute;
+  top: 120px;
+  left: 75%;
+  transform: translateX(-50%);
+  width: 40vw;
+  padding: 0 24 320 24;
+  background-color: rgb(18, 18, 18);
+} */
+
+
+/*--------------------*/
+/* .projectItem{
+  margin-bottom: 40px;
+  padding: 40px;
+  border-radius: 2px;
+  line-height: 6.0;
+  background-color: rgb(238, 238, 238);
+} */
+
+
+/*--------------------*/
+/* .projectContent {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.0;
+  background-color: rgb(158, 65, 65);
+} */
+
+
+
+
+/*-------------------------------------------------- IMPRESSUM --------------------------------------------------*/
+/*--------------------*/
+.impressum {
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    /* Center items vertically */
+    padding-top        : 120px;
+    padding-bottom     : 10vh;
+    /* background-color: rgb(227, 99, 99); */
+}
+
+
+/*--------------------*/
+.imgTypo {
+    margin-bottom   : 320;
+    padding-top     : 32;
+    padding-bottom  : 24;
+    width           : 50vh;
+    background-color: rgb(18, 18, 18);
+}
+
+
+/*--------------------*/
+.impressum img {
+    width     : 50vh;
+    max-height: auto;
+}
+
+
+/*-------------------------------------------------- NAVIGATION --------------------------------------------------*/
+/*--------------------*/
+.slogan {
+    display            : flex;
+    flex-wrap          : wrap;
+    align-items        : baseline;
+    padding-top        : 100px;
+    padding-bottom     : 60vh;
+    /* background-color: rgb(18, 18, 18); */
+}
+
+
+/*--------------------*/
+.slogan-detail {
+    display            : flex;
+    flex-wrap          : wrap;
+    align-items        : baseline;
+    padding-top        : 100;
+    padding-bottom     : 100vh;
+    /* background-color: rgb(181, 82, 82); */
+}
+
+
+/*-------------------------------------------------- FOOTER --------------------------------------------------*/
+/*--------------------*/
+footer {
+    display            : flex;
+    flex-direction     : row;
+    display            : flex;
+    position           : static;
+    padding-bottom     : 0px;
+    margin-bottom      : 0px;
+    width              : 90%;
+    background-color: rgb(18,18,18);
+    /* background-color: rgb(56, 241, 204); */
+}
+
+
+
+/*--------------------*/
+.footerItem {
+    width           : 100%;
+    margin-bottom   : 2rem;
+    text-align      : left;
+    display         : flex;
+    flex-direction  : column;
+    background-color: rgb(18, 18, 18);
+    word-wrap       : break-word;
+}
+
+
+/*-------------------------------------------------- BUTTONS --------------------------------------------------*/
+/*--------------------*/
+/* .button {
+  border: none;
+  color: rgb(251, 251, 251);
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 2px;
+  margin-top: 16px;
+  background-color: rgb(18, 18, 18);
+} */
+
+
+/*-------------------------------------------------- INPUTS --------------------------------------------------*/
+/*--------------------*/
+/* input {
+  width: 100%;
+  padding: 16px 16px;
+  border: 1px solid rgb(18, 18, 18); 
+} */
+
+
+/*--------------------*/
+/* textarea {
+  width: 100%;
+  padding: 16px 16px;
+  border: 1px solid rgb(18, 18, 18);  
+} */
+
+
+/*-------------------------------------------------- TYPO +750 --------------------------------------------------*/
+:root {
+    font-size: 16px;
+}
+
+
+h1,
+h2,
+h3,
+H4,
+H5,
+H6 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+    font-style : normal;
+}
+
+
+/*--------------------*/
+/* p2{
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight:100;
+  font-style: normal;
+  padding-right: 16px;
+  color: rgb(136, 29, 29);
+  white-space: normal;
+} */
+
+
+/*--------------------*/
+p {
+    color      : rgb(255, 255, 255);
+    font-family: "Manrope", sans-serif;
+    font-size  : 1.5rem;
+    font-weight: 100;
+    font-style : normal;
+}
+
+
+h1, .navigation-item {
+    display: inline;
+    font-size       : 4rem;
+    color           : rgb(238, 238, 238);
+    background-color: rgb(18, 18, 18);
+    padding-right   : 24px;
+    margin-bottom   : 8px;
+}
+
+/*--------------------*/
+h2 {
+    font-size       : 4rem;
+    color           : rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    opacity         : 0;
+    padding-right   : 24px;
+    margin          : 0;
+    margin-bottom   : 8px;
+}
+
+
+/*--------------------*/
+/* h3 {
+  font-size: 32px;
+  color: rgb(238, 238, 238);
+  background-color: rgb(18, 18, 18);
+} */
+
+
+/*--------------------*/
+/* h4 {
+  font-size: 48px;
+  background-color: rgb(18, 18, 18);
+  background-color: rgb(238, 238, 238);
+} */
+
+
+/*--------------------*/
+/* h5 {
+  font-size: 16px;
+  color: rgb(238, 238, 238);
+  background-color: rgb(18, 18, 18);
+} */
+
+
+/*--------------------*/
+/* h6 {
+  font-size: 16px;
+  background-color: rgb(18, 18, 18);
+  background-color: rgb(238, 238, 238);
+} */
+
+
+/*--------------------*/
+small {
+    color          : rgb(238, 238, 238);
+    font-family    : "Manrope", sans-serif;
+    font-size      : 1rem;
+    font-weight    : 100;
+    font-style     : normal;
+    text-decoration: none;
+    white-space    : nowrap;
+}
+
+
+a {
+    color          : rgb(238, 238, 238);
+    font-family    : "Manrope", sans-serif;
+    font-size      : 1rem;
+    font-weight    : 100;
+    font-style     : normal;
+    text-decoration: none;
+}
+
+
+/*--------------------*/
+label {
+    background-color: rgb(18, 18, 18);
+    font-family     : "Manrope", sans-serif;
+    font-size       : 12px;
+    font-weight     : 100;
+    font-style      : normal;
+    text-decoration : none;
+    white-space     : nowrap;
+}
+
+
+
+/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
+@media screen and (max-width: 1000px) {
+    html {
+        padding-right      : 24px;
+        padding-left       : 24px;
+        /* background-color: rgb(56, 241, 204); */
+    }
+
+
+
+    /*--------------------*/
+    h1,
+    h2,
+    h3,
+    H4,
+    H5,
+    H6 {
+        font-family  : "Manrope", sans-serif;
+        font-weight  : 200;
+        font-style   : normal;
+        padding-right: 16px;
+    }
+
+
+    h1, .navigation-item {
+        display: inline;
+        font-size       : 2.4rem;
+        color           : rgb(238, 238, 238);
+        background-color: rgb(18, 18, 18);
+        margin-bottom   : 8px;
+    }
+
+
+    /*--------------------*/
+    h2 {
+        font-size       : 2.4rem;
+        color           : rgb(0, 0, 0);
+        background-color: rgb(238, 238, 238);
+        opacity         : 0;
+        padding-right   : 24px;
+        margin          : 0;
+        margin-bottom   : 8px;
+    }
+
+
+    /*--------------------*/
+    footer {
+        display            : flex;
+        flex-direction     : column;
+        display            : flex;
+        position           : static;
+        padding-bottom     : 0px;
+        margin-bottom      : 0px;
+        width              : 90%;
+        /* background-color: rgb(56, 241, 204); */
+    }
+
+}
+
+
+
+
+/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
+@media screen and (max-width: 600px) {
+    html {
+        padding-right      : 0px;
+        padding-left       : 0px;
+        /* background-color: rgb(43, 255, 195); */
+    }
+
+
+    /*--------------------*/
+    .card {
+        position        : relative;
+        top             : 0px;
+        left            : auto;
+        transform       : none;
+        width           : 85%;
+        margin-bottom   : 160px;
+        padding-bottom  : 24px;
+        padding-left    : 16;
+        padding-right   : 16;
+        padding-top     : 8px;
+        background-color: rgb(18, 18, 18);
+    }
+
+
+    /*--------------------*/
+    .slogan {
+        padding-top   : 100px;
+        width         : 95%;
+        padding-left  : 0;
+        padding-right : 0;
+        padding-bottom: 40vh;
+        /* background-color: rgb(43, 255, 195); */
+    }
+
+    .slogan-detail {
+        padding-top        : 100px;
+        width              : 95%;
+        padding-bottom     : 1vh;
+        /* background-color: rgb(43, 255, 195); */
+    }
+
+
+    /*--------------------*/
+    .content {
+        position           : center;
+        padding-left       : 0;
+        padding-right      : 0;
+        /* background-color: rgb(56, 241, 204); */
+    }
+
+    /*--------------------*/
+    footer {
+        display            : flex;
+        flex-direction     : column;
+        display            : flex;
+        position           : static;
+        padding-bottom     : 0px;
+        padding-left       : 16;
+        margin-bottom      : 0px;
+        width              : 90%;
+        /* background-color: rgb(56, 241, 204); */
+    }
+
+
+    /*--------------------*/
+    /* .footerItem {
+  width: 100%;
+  padding-bottom: 5;
+} */
+
+
+    /*--------------------*/
+    /* li {
+  list-style-type: none;
+  line-height: 3;
+} */
+
+
+    /*--------------------*/
+    h1,
+    h2,
+    h3,
+    H4,
+    H5,
+    H6 {
+        font-family  : "Manrope", sans-serif;
+        font-weight  : 200;
+        font-style   : normal;
+        padding-right: 16px;
+    }
+
+
+    h1 {
+        font-size       : 5rem;
+        color           : rgb(238, 238, 238);
+        background-color: rgb(18, 18, 18);
+        padding-right   : 24px;
+        margin-bottom   : 8px;
+    }
+
+
+    /*--------------------*/
+    h2 {
+        font-size       : 5rem;
+        color           : rgb(0, 0, 0);
+        background-color: rgb(238, 238, 238);
+        opacity         : 0;
+        padding-right   : 24px;
+        margin          : 0;
+        margin-bottom   : 8px;
+    }s
+
+
+    /*--------------------*/
+    a {
+        color      : rgb(238, 238, 238);
+        font-family: "Manrope", sans-serif;
+
+        font-weight    : 100;
+        font-style     : normal;
+        text-decoration: none;
+        white-space    : nowrap;
+    }
+
+
+    /*--------------------*/
+    small {
+        color      : rgb(238, 238, 238);
+        font-family: "Manrope", sans-serif;
+
+        font-weight    : 100;
+        font-style     : normal;
+        text-decoration: none;
+        white-space    : nowrap;
+    }
+
+
+    /*--------------------*/
+    .subheader-page {
+        position        : fixed;
+        top             : 0;
+        background-color: rgb(18, 18, 18);
+        z-index         : 9999;
+        width           : 100%;
+        padding-top     : 32px;
+        padding-bottom  : 32px;
+    }
+
+    /*--------------------*/
+    .close {
+        position: absolute;
+        right   : 32px;
+    }
+
+
+    /*--------------------*/
+    .lineHeight {
+        line-height: 2rem;
+    }
+
+
+}
+
+
+
+

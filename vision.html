@@ -1,0 +1,70 @@
+<!doctype html class="content">
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tomorrow is morrows</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-16x16.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <header id="externalHeader"></header>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('externalHeader').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden des Header:', error);
+            });
+    </script>
+
+    <div class="content">
+
+        <div class="slogan-detail">
+            <div>
+                <h1 class="editable_line">Vision</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div>
+            <p class="editable_line">Unsere Vision ist eine Online-Plattform, die regenerative, zeitlich begrenzte und innovative Projekte mit
+                entsprechenden Projektarbeitenden verbindet. Organisationen oder Einzelpersonen stellen Projektanfragen,
+                interessierte Menschen mit Zeit, Skills, Motivation und Interesse für das Projekt melden sich bei uns.
+                Wir stellen autonome Teams zusammen, die selbstständig arbeiten und ihren Lohn für die geleistete Arbeit
+                selbst festlegen. Während des Projekts übernimmt morrows administrative Aufgaben und stellt die
+                Infrastruktur bereit. Ein Teil des Projekthonorars geht an die morrows Genossenschaft. Dies fördert ein
+                dezentrales und regeneratives Innovationsökosystem.<br><br>Als Eigenprodukte arbeiten wir an der
+                Entwicklung eines Entlohnungstools und an einem Tool zur Erstellung von Mitarbeitenden Profilen, damit
+                wir die bestgeeignetsten Projektteams zusammenstellen können.</p>
+        </div>
+    </div>
+
+    <footer id="externalFooter"></footer>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('externalFooter').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden des Footers:', error);
+            });
+    </script>
+
+</body>
+
+</html>

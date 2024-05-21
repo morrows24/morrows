@@ -1,0 +1,180 @@
+<!doctype html class="content">
+<html lang="de">
+
+<!--------------------------------------------------  HEAD -------------------------------------------------->
+<header id="externalHead"></header>
+    
+<!-- JavaScript zum Einbinden des Headers -->
+<script>
+    // Lade den Header-Inhalt
+    fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+            // Füge den Header-Inhalt in das DOM ein
+            document.getElementById('externalHead').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Head:', error);
+        });
+</script>
+
+
+
+
+
+
+<!--------------------------------------------------  BODY -------------------------------------------------->
+<body>
+    <!--------------------------------------------------  HEADER -------------------------------------------------->
+    <header id="externalHeader"></header>
+    
+    <!-- JavaScript zum Einbinden des Headers -->
+    <script>
+        // Lade den Header-Inhalt
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                // Füge den Header-Inhalt in das DOM ein
+                document.getElementById('externalHeader').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden des Header:', error);
+            });
+    </script>
+
+
+
+
+<!--------------------------------------------------  NAVIGATION -------------------------------------------------->
+<div class="slogan-detail">
+
+
+    <!-- VISION -->
+    <div>
+        <!-- <a href="vision.html"> -->
+            <h2>Vision</h2>
+        <!-- </a> -->
+    </div>
+
+    <div>
+        <h2>/</h2>
+    </div>
+
+
+
+    <!-- PROJEKT -->
+    <div>
+        <!-- <a href="vision.html"> -->
+            <h1>Projekt</h1>
+        <!-- </a> -->
+    </div>
+    
+    
+
+</div>
+
+
+
+
+<!--------------------------------------------------  CONTENT -------------------------------------------------->
+
+
+<!-- CARD -->
+
+
+<div class="cardProject">
+    <div>
+
+
+    <!-- INTRO -->
+    <div class="card>
+        <div class="projectContent">
+                <!-- <h1>Title</h1> -->
+        <p>Haben du oder dein Unternehmen ein Projekt, dass ihr gerne umsetzen möchtet und für das euch noch die geeigneten Projektmitarbeitenden fehlen? Oder hast du eine tolle Projektidee, dir fehlen aber sowohl die Finanzierung wie auch einige Spezialist*innen für die Umsetzung?<br><br>Meld dich bei morrows!</p>
+        </div>
+    </div>
+    
+
+
+    <!-- PROJECTCARD 1 -->
+    <div class="projectItem">
+        <div class="projectContent">
+            <li>
+                <small class="c-black">#001</small>
+                <p class="c-black">#001</p>
+            </li>
+
+            <li>
+                <small class="c-black">Datum</small>
+                <p class="c-black">24-04-24</p>
+            </li>
+
+            <li>
+                <small class="c-black">Projekt Name</small>
+                <p class="c-black">ABC</p>
+            </li>
+
+            <li>
+                <small class="c-black">Projekt Art</small>
+                <p class="c-black">ABC</p>
+            </li>
+
+            <li>
+                <small class="c-black">Iniziant*innen</small>
+                <p class="c-black">ABC</p>
+            </li>
+
+            <li>
+                <small class="c-black">Skills</small>
+                <p class="c-black">ABC</p>
+            </li>
+
+            <li>
+                <small class="c-black">Realisationszeit</small>
+                <p class="c-black">XY Monate</p>
+            </li>
+
+            <li>
+                <small class="c-black">Geschätzer Aufwand</small>
+                <p class="c-black">XY 60h</p>
+            </li>
+
+            <li>
+                <small class="c-black">Vergütung</small>
+                <p class="c-black">ABC</p>
+            </li>
+
+            <!-- MAIL -->
+            <a href="mailto:vera.schuerch@gmail.com?subject=Projekt%20#%20ABC%20">
+            <button class="button">Mehr erfahren</a>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<!--------------------------------------------------  FOOTER -------------------------------------------------->
+<footer id="externalFooter"></footer>
+
+<!-- JavaScript zum Einbinden des Footers -->
+<script>
+    // Lade den Footer-Inhalt
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            // Füge den Footer-Inhalt in das DOM ein
+            document.getElementById('externalFooter').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden des Footers:', error);
+        });
+</script>
+
+</body>
+</html>

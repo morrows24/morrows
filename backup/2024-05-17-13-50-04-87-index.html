@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tomorrow is morrows</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-16x16.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="subheader-page">
+            <div class="logo">
+                <img src="assets/morrows_16.svg" alt="morrows" />
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="slogan">
+            <div class="navigation-item">
+                <a href="vision.html">
+                    <h1 class="editable_line">Vision</h1>
+                </a>
+                <span>/</span>
+            </div>
+            <div class="navigation-item">
+                <a href="projekte.html">
+                    <h1 class="editable_line">Projekte</h1>
+                </a>
+                <span>/</span>
+            </div>
+            <div class="navigation-item">
+                <a href="mitgestalten.html">
+                    <h1 class="editable_line">Mitgestalten</h1>
+                </a>
+                <span>/</span>
+            </div>
+            <div class="navigation-item">
+                <a href="GruenderInnen.html">
+                    <h1 class="editable_line">Gründer&shy;*innen</h1>
+                </a>
+                <span>/</span>
+            </div>
+            <div class="navigation-item">
+                <a class="navigation-item" class="editable_line"
+                    href="https://www.instagram.com/_morrows?igsh=MWFwMXZxMXZlOXR5Ng%3D%3D&amp;utm_source=qr"
+                    target="_blank">Instagram</a>
+                <span>/</span>
+            </div>
+            <div class="navigation-item">
+                <a class="navigation-item"
+                    href="mailto:hallo@morrows.ch?subject=go%20through%20the%20day%20with%20a%20smile"
+                    class="editable_line">Kontakt</a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="externalFooter" class="content"></footer>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('externalFooter').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden des Footers:', error);
+            });
+    </script>
+</body>
+
+</html>
