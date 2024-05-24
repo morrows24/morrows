@@ -16,17 +16,16 @@
 </head>
 
 <body>
-    <header id="externalHeader"></header>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('externalHeader').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Fehler beim Laden des Header:', error);
-            });
-    </script>
+    <header>
+        <div class="subheader-page">
+            <div class="logo">
+                <img src="assets/morrows_16.svg" alt="morrows" />
+            </div>
+            <div class="close">
+                <a href="index.html"><img src="assets/close_white_16px.svg" alt="close" /></a>
+            </div>
+        </div>
+    </header>
 
     <div class="content">
         <div class="slogan-detail">
@@ -49,29 +48,18 @@
                 <h2>/</h2>
             </div>
             <div>
-                <h2 class="editable_line">Gründungs&shy;mitglieder&shy;*innen</h2>
+                <h1 class="editable_line">Gründungs&shy;mitglieder&shy;*innen</h1>
             </div>
-            <div>
-                <h2>/</h2>
-            </div
-            <div>
-                <h1 class="editable_line">06062024</h1>
-            </div>
-            <div>
-                <h2>/</h2>
-            </div
         </div>
     </div>
 
     <div class="card">
         <div>
-            <p class="editable_line">Gründer*innen Info<br><br>
-
-                tbd</p>
+            <p class="editable_line">Info der Gründerinnen<br><br></p>
         </div>
     </div>
 
-    <footer id="externalFooter"></footer>
+    <footer id="externalFooter" class="content"></footer>
 
     <script>
         fetch('footer.html')

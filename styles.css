@@ -4,6 +4,13 @@ html {
     background-color: rgb(18, 18, 18);
 }
 
+header {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
 
 .content {
     position           : center;
@@ -15,12 +22,9 @@ html {
 
 /*--------------------*/
 .subheader-page {
-    display         : flex;
     width           : 100%;
-    top             : 0;
     padding-top     : 4vh;
     padding-bottom  : 5vh;
-    z-index         : 9999;
     background-color: rgb(18, 18, 18);
 }
 
@@ -55,7 +59,7 @@ body::before {
 
 /*--------------------*/
 .c-black {
-    color: rgb(18,18,18);
+    color: rgb(111, 42, 42);
 }
 
 
@@ -76,13 +80,13 @@ li {
 /*--------------------*/
 .card {
     position        : absolute;
-    top             : 120px;
+    top             : 160px;
     left            : 74%;
     transform       : translateX(-50%);
     width           : 40vw;
     /* z-index      : 9999; */
     padding         : 0 24 320 24;
-    background-color: rgb(18,18,18);
+    background-color: rgb(18, 18, 18);
 }
 
 
@@ -155,7 +159,7 @@ li {
     display            : flex;
     flex-wrap          : wrap;
     align-items        : baseline;
-    padding-top        : 100px;
+    padding-top        : 160px;
     padding-bottom     : 60vh;
     /* background-color: rgb(18, 18, 18); */
 }
@@ -166,27 +170,22 @@ li {
     display            : flex;
     flex-wrap          : wrap;
     align-items        : baseline;
-    padding-top        : 100;
+    padding-top        : 160;
     padding-bottom     : 100vh;
-    /* background-color: rgb(181, 82, 82); */
+    /* background-color: rgb(18, 18, 18); */
 }
 
 
 /*-------------------------------------------------- FOOTER --------------------------------------------------*/
 /*--------------------*/
 footer {
-    display            : flex;
-    flex-direction     : row;
-    display            : flex;
-    position           : static;
-    padding-bottom     : 0px;
-    margin-bottom      : 0px;
-    width              : 90%;
-    background-color: rgb(18,18,18);
-    /* background-color: rgb(56, 241, 204); */
+    position        : sticky;
+    display         : flex;
+    width           : 100%;
+    bottom          : 0;
+    margin          : 0;
+    background-color: rgb(18, 18, 18);
 }
-
-
 
 /*--------------------*/
 .footerItem {
@@ -273,8 +272,9 @@ p {
 }
 
 
-h1, .navigation-item {
-    display: inline;
+h1,
+.navigation-item {
+    display         : inline;
     font-size       : 4rem;
     color           : rgb(238, 238, 238);
     background-color: rgb(18, 18, 18);
@@ -361,74 +361,13 @@ label {
 
 
 
-/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
-@media screen and (max-width: 1000px) {
-    html {
-        padding-right      : 24px;
-        padding-left       : 24px;
-        /* background-color: rgb(56, 241, 204); */
-    }
-
-
-
-    /*--------------------*/
-    h1,
-    h2,
-    h3,
-    H4,
-    H5,
-    H6 {
-        font-family  : "Manrope", sans-serif;
-        font-weight  : 200;
-        font-style   : normal;
-        padding-right: 16px;
-    }
-
-
-    h1, .navigation-item {
-        display: inline;
-        font-size       : 2.4rem;
-        color           : rgb(238, 238, 238);
-        background-color: rgb(18, 18, 18);
-        margin-bottom   : 8px;
-    }
-
-
-    /*--------------------*/
-    h2 {
-        font-size       : 2.4rem;
-        color           : rgb(0, 0, 0);
-        background-color: rgb(238, 238, 238);
-        opacity         : 0;
-        padding-right   : 24px;
-        margin          : 0;
-        margin-bottom   : 8px;
-    }
-
-
-    /*--------------------*/
-    footer {
-        display            : flex;
-        flex-direction     : column;
-        display            : flex;
-        position           : static;
-        padding-bottom     : 0px;
-        margin-bottom      : 0px;
-        width              : 90%;
-        /* background-color: rgb(56, 241, 204); */
-    }
-
-}
-
-
-
 
 /*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     html {
         padding-right      : 0px;
         padding-left       : 0px;
-        /* background-color: rgb(43, 255, 195); */
+        /* background-color: rgb(119, 48, 48); */
     }
 
 
@@ -451,27 +390,28 @@ label {
     /*--------------------*/
     .slogan {
         padding-top   : 100px;
-        width         : 95%;
+        width         : 85%;
         padding-left  : 0;
         padding-right : 0;
         padding-bottom: 40vh;
-        /* background-color: rgb(43, 255, 195); */
+
+        /* background-color: rgb(224, 39, 39); */
+        /* padding-top: 24px; */
     }
 
     .slogan-detail {
         padding-top        : 100px;
-        width              : 95%;
+        width              : 85%;
         padding-bottom     : 1vh;
-        /* background-color: rgb(43, 255, 195); */
+        /* background-color: rgb(224, 39, 39); */
     }
 
 
     /*--------------------*/
     .content {
-        position           : center;
-        padding-left       : 0;
-        padding-right      : 0;
-        /* background-color: rgb(56, 241, 204); */
+        padding-left       : 16px;
+        padding-right      : 16px;
+        /* background-color: rgb(43, 255, 195); */
     }
 
     /*--------------------*/
@@ -481,10 +421,9 @@ label {
         display            : flex;
         position           : static;
         padding-bottom     : 0px;
-        padding-left       : 16;
         margin-bottom      : 0px;
         width              : 90%;
-        /* background-color: rgb(56, 241, 204); */
+        /* background-color: rgb(43, 255, 195); */
     }
 
 
@@ -534,8 +473,9 @@ label {
         padding-right   : 24px;
         margin          : 0;
         margin-bottom   : 8px;
-    }s
+    }
 
+    s
 
     /*--------------------*/
     a {
@@ -563,7 +503,8 @@ label {
 
     /*--------------------*/
     .subheader-page {
-        position        : fixed;
+        display         : flex;
+        position        : sticky;
         top             : 0;
         background-color: rgb(18, 18, 18);
         z-index         : 9999;
@@ -584,9 +525,53 @@ label {
         line-height: 2rem;
     }
 
-
 }
 
 
 
 
+/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
+@media screen and (max-width: 920px) {
+    html {
+        padding-right      : 0px;
+        padding-left       : 0px;
+        /* background-color: rgb(119, 48, 48); */
+    }
+
+
+    /*--------------------*/
+    h1,
+    h2,
+    h3,
+    H4,
+    H5,
+    H6 {
+        font-family  : "Manrope", sans-serif;
+        font-weight  : 200;
+        font-style   : normal;
+        padding-right: 16px;
+    }
+
+
+    h1,
+    .navigation-item {
+        display         : inline;
+        font-size       : 2.4rem;
+        color           : rgb(238, 238, 238);
+        background-color: rgb(18, 18, 18);
+        margin-bottom   : 8px;
+    }
+
+
+    /*--------------------*/
+    h2 {
+        font-size       : 2.4rem;
+        color           : rgb(0, 0, 0);
+        background-color: rgb(238, 238, 238);
+        opacity         : 0;
+        padding-right   : 24px;
+        margin          : 0;
+        margin-bottom   : 8px;
+    }
+
+}

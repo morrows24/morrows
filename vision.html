@@ -16,18 +16,17 @@
 </head>
 
 <body>
-    
-    <header id="externalHeader"></header>
-    <script>
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('externalHeader').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Fehler beim Laden des Header:', error);
-            });
-    </script>
+
+    <header>
+        <div class="subheader-page">
+            <div class="logo">
+                <img src="assets/morrows_16.svg" alt="morrows" />
+            </div>
+            <div class="close">
+                <a href="index.html"><img src="assets/close_white_16px.svg" alt="close" /></a>
+            </div>
+        </div>
+    </header>
 
     <div class="content">
 
@@ -40,7 +39,8 @@
 
     <div class="card">
         <div>
-            <p class="editable_line">Unsere Vision ist eine Online-Plattform, die regenerative, zeitlich begrenzte und innovative Projekte mit
+            <p class="editable_line">Unsere Vision ist eine Online-Plattform, die regenerative, zeitlich begrenzte und
+                innovative Projekte mit
                 entsprechenden Projektarbeitenden verbindet. Organisationen oder Einzelpersonen stellen Projektanfragen,
                 interessierte Menschen mit Zeit, Skills, Motivation und Interesse für das Projekt melden sich bei uns.
                 Wir stellen autonome Teams zusammen, die selbstständig arbeiten und ihren Lohn für die geleistete Arbeit
@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <footer id="externalFooter"></footer>
+    <footer id="externalFooter" class="content"></footer>
 
     <script>
         fetch('footer.html')
