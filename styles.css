@@ -5,18 +5,18 @@ html {
 }
 
 header {
-    display: flex;
+    display : flex;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top     : 0;
+    z-index: 100;
 }
 
 
 .content {
-    position           : center;
-    padding-left       : 3rem;
-    padding-right      : 3rem;
-    /* background-color: rgb(109, 177, 186); */
+    position     : center;
+    padding-left : 3rem;
+    padding-right: 3rem;
 }
 
 
@@ -84,8 +84,7 @@ li {
     left            : 74%;
     transform       : translateX(-50%);
     width           : 40vw;
-    /* z-index      : 9999; */
-    padding         : 0 24 320 24;
+    padding         : 0 24 0 24;
     background-color: rgb(18, 18, 18);
 }
 
