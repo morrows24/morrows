@@ -9,7 +9,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top     : 0;
-    z-index: 100;
+    z-index : 100;
 }
 
 
@@ -88,50 +88,14 @@ li {
     background-color: rgb(18, 18, 18);
 }
 
-
-/*--------------------*/
-/* .cardProject {
-  position: absolute;
-  top: 120px;
-  left: 75%;
-  transform: translateX(-50%);
-  width: 40vw;
-  padding: 0 24 320 24;
-  background-color: rgb(18, 18, 18);
-} */
-
-
-/*--------------------*/
-/* .projectItem{
-  margin-bottom: 40px;
-  padding: 40px;
-  border-radius: 2px;
-  line-height: 6.0;
-  background-color: rgb(238, 238, 238);
-} */
-
-
-/*--------------------*/
-/* .projectContent {
-  display: flex;
-  flex-direction: column;
-  line-height: 2.0;
-  background-color: rgb(158, 65, 65);
-} */
-
-
-
-
 /*-------------------------------------------------- IMPRESSUM --------------------------------------------------*/
 /*--------------------*/
 .impressum {
-    display            : flex;
-    flex-direction     : column;
-    align-items        : center;
-    /* Center items vertically */
-    padding-top        : 120px;
-    padding-bottom     : 10vh;
-    /* background-color: rgb(227, 99, 99); */
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding-top   : 120px;
+    padding-bottom: 10vh;
 }
 
 
@@ -197,40 +161,6 @@ footer {
     word-wrap       : break-word;
 }
 
-
-/*-------------------------------------------------- BUTTONS --------------------------------------------------*/
-/*--------------------*/
-/* .button {
-  border: none;
-  color: rgb(251, 251, 251);
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 2px;
-  margin-top: 16px;
-  background-color: rgb(18, 18, 18);
-} */
-
-
-/*-------------------------------------------------- INPUTS --------------------------------------------------*/
-/*--------------------*/
-/* input {
-  width: 100%;
-  padding: 16px 16px;
-  border: 1px solid rgb(18, 18, 18); 
-} */
-
-
-/*--------------------*/
-/* textarea {
-  width: 100%;
-  padding: 16px 16px;
-  border: 1px solid rgb(18, 18, 18);  
-} */
-
-
 /*-------------------------------------------------- TYPO +750 --------------------------------------------------*/
 :root {
     font-size: 16px;
@@ -292,39 +222,6 @@ h2 {
     margin-bottom   : 8px;
 }
 
-
-/*--------------------*/
-/* h3 {
-  font-size: 32px;
-  color: rgb(238, 238, 238);
-  background-color: rgb(18, 18, 18);
-} */
-
-
-/*--------------------*/
-/* h4 {
-  font-size: 48px;
-  background-color: rgb(18, 18, 18);
-  background-color: rgb(238, 238, 238);
-} */
-
-
-/*--------------------*/
-/* h5 {
-  font-size: 16px;
-  color: rgb(238, 238, 238);
-  background-color: rgb(18, 18, 18);
-} */
-
-
-/*--------------------*/
-/* h6 {
-  font-size: 16px;
-  background-color: rgb(18, 18, 18);
-  background-color: rgb(238, 238, 238);
-} */
-
-
 /*--------------------*/
 small {
     color          : rgb(238, 238, 238);
@@ -340,10 +237,10 @@ small {
 a {
     color          : rgb(238, 238, 238);
     font-family    : "Manrope", sans-serif;
-    font-size      : 1rem;
+    font-size      : 1.5rem;
     font-weight    : 100;
     font-style     : normal;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
@@ -427,20 +324,6 @@ label {
 
 
     /*--------------------*/
-    /* .footerItem {
-  width: 100%;
-  padding-bottom: 5;
-} */
-
-
-    /*--------------------*/
-    /* li {
-  list-style-type: none;
-  line-height: 3;
-} */
-
-
-    /*--------------------*/
     h1,
     h2,
     h3,
@@ -478,9 +361,9 @@ label {
 
     /*--------------------*/
     a {
-        color      : rgb(238, 238, 238);
-        font-family: "Manrope", sans-serif;
-
+        color          : rgb(238, 238, 238);
+        font-family    : "Manrope", sans-serif;
+        font-size      : 1.5rem;
         font-weight    : 100;
         font-style     : normal;
         text-decoration: none;
@@ -532,9 +415,8 @@ label {
 /*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
 @media screen and (max-width: 920px) {
     html {
-        padding-right      : 0px;
-        padding-left       : 0px;
-        /* background-color: rgb(119, 48, 48); */
+        padding-right: 0px;
+        padding-left : 0px;
     }
 
 

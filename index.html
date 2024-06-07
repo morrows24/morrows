@@ -90,18 +90,36 @@
         </div>
     </div>
 
-    <footer id="externalFooter" class="content"></footer>
+    <footer class="content">
+        <div class="footerItem">
+            <small class="lineHeight editable_line">morrows</small>
+            <small class="editable_line">ein Genossenschafts Projekt</small>
+        </div>
 
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('externalFooter').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Fehler beim Laden des Footers:', error);
-            });
-    </script>
+        <div class="footerItem">
+            <div>
+                <a class="lineHeight editable_line"
+                    href="https://www.instagram.com/_morrows?igsh=MWFwMXZxMXZlOXR5Ng%3D%3D&amp;utm_source=qr"
+                    target="_blank">Instagram</a>
+            </div>
+
+            <div>
+                <a class="editable_line"
+                    href="mailto:hallo@morrows.ch?subject=tomorrow%20is%20morrows">hallo@morrows.ch</a>
+            </div>
+        </div>
+
+        <div class="footerItem">
+            <a class="lineHeight editable_line" href="impressum.html">Impressum</a>
+            <small class="editable_line">24042024</small>
+        </div>
+
+        <div class="footerItem">
+            <small class="lineHeight editable_line">go through the day with a smile.</small>
+            <small class="editable_line">tomorrow is morrows</small>
+        </div>
+    </footer>
+    
 </body>
 
 </html>

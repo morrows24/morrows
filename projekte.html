@@ -1,18 +1,17 @@
-<!doctype html class="content">
+<!DOCTYPE html class="content">
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekte - tomorrow is morrows</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-16x16.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon-16x16.ico" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -40,26 +39,37 @@
     </div>
 
     <div class="card">
-        <div>
-            <p class="editable_line">Haben du oder dein Unternehmen ein Projekt, dass ihr gerne umsetzen möchtet und für
-                das euch noch die
-                geeigneten Projektmitarbeitenden fehlen? Oder hast du eine tolle Projektidee, dir fehlen aber sowohl die
-                Finanzierung wie auch einige Spezialist*innen für die Umsetzung?<br><br>Meld dich bei morrows!</p>
+        <div class="editable">
+            <p>Haben du oder dein Unternehmen ein Projekt, dass ihr gerne umsetzen möchtet und für das euch noch die geeigneten Projektmitarbeitenden fehlen? Oder hast du eine tolle Projektidee, dir fehlen aber sowohl die Finanzierung wie auch einige Spezialist*innen für die Umsetzung?<br /><br />Meld dich bei morrows!</p>
         </div>
     </div>
 
-    <footer id="externalFooter" class="content"></footer>
+    <footer class="content">
+        <div class="footerItem">
+            <small class="lineHeight editable_line">morrows</small>
+            <small class="editable_line">ein Genossenschafts Projekt</small>
+        </div>
 
-    <script>
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('externalFooter').innerHTML = data;
-            })
-            .catch(error => {
-                console.error('Fehler beim Laden des Footers:', error);
-            });
-    </script>
+        <div class="footerItem">
+            <div>
+                <a class="lineHeight editable_line" href="https://www.instagram.com/_morrows?igsh=MWFwMXZxMXZlOXR5Ng%3D%3D&amp;utm_source=qr" target="_blank">Instagram</a>
+            </div>
+
+            <div>
+                <a class="editable_line" href="mailto:hallo@morrows.ch?subject=tomorrow%20is%20morrows">hallo@morrows.ch</a>
+            </div>
+        </div>
+
+        <div class="footerItem">
+            <a class="lineHeight editable_line" href="impressum.html">Impressum</a>
+            <small class="editable_line">24042024</small>
+        </div>
+
+        <div class="footerItem">
+            <small class="lineHeight editable_line">go through the day with a smile.</small>
+            <small class="editable_line">tomorrow is morrows</small>
+        </div>
+    </footer>
 
 </body>
 
