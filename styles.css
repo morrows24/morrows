@@ -1,7 +1,6 @@
-/*-------------------------------------------------- GLOBALS --------------------------------------------------*/
-/*---------- GLOBAL STYLES ! ----------*/
 html {
     background-color: rgb(18, 18, 18);
+    font-family: "Manrope", sans-serif;
 }
 
 header {
@@ -12,15 +11,6 @@ header {
     z-index : 100;
 }
 
-
-.content {
-    position     : center;
-    padding-left : 3rem;
-    padding-right: 3rem;
-}
-
-
-/*--------------------*/
 .subheader-page {
     width           : 100%;
     padding-top     : 4vh;
@@ -28,23 +18,17 @@ header {
     background-color: rgb(18, 18, 18);
 }
 
-
-/*--------------------*/
 .logo {
     position : absolute;
     left     : 50%;
     transform: translateX(-50%);
 }
 
-
-/*--------------------*/
 .close {
     position: absolute;
     right   : 80px;
 }
 
-
-/*---------- WHITE BACKGROUND LINE ! ----------*/
 body::before {
     content         : '';
     position        : fixed;
@@ -56,40 +40,82 @@ body::before {
     z-index         : -1;
 }
 
-
-/*--------------------*/
 .c-black {
     color: rgb(111, 42, 42);
 }
 
-
-/*--------------------*/
-li {
-    list-style-type: none;
-    line-height    : 3rem;
+nav {
+    margin          : 124px 32px 0px 32px;
+    background-color: rgb(18, 18, 18);
 }
 
+nav ul {
+    list-style-type: none;
+    padding        : 0;
+    margin         : 0;
+    display        : flex;
+    flex-wrap      : wrap;
+}
 
-/*--------------------*/
+nav ul li {
+    margin         : 0px 24px 8px 0px;
+    position       : relative;
+    align-self     : flex-end;
+    justify-content: flex-start;
+}
+
+nav ul li a {
+    font-size      : 4rem;
+    font-weight    : 200;
+    font-style     : normal;
+    color          : rgb(238, 238, 238);
+    text-decoration: none;
+}
+
+.contact {
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li:not(:last-child)::after {
+    content    : '/';
+    color      : white;
+    margin-left: 15px;
+    font-size  : 4rem;
+    margin     : 0px 0px 0px 24px;
+}
+
+nav ul li:last-child::after {
+    content    : '';
+    color      : white;
+    margin-left: 15px;
+    font-size  : 4rem;
+    margin     : 0px 0px 0px 24px;
+}
+
 .lineHeight {
     line-height: 2.8rem;
 }
 
-
-/*-------------------------------------------------- CARDS --------------------------------------------------*/
-/*--------------------*/
-.card {
-    position        : absolute;
-    top             : 160px;
-    left            : 74%;
-    transform       : translateX(-50%);
-    width           : 40vw;
-    padding         : 0 24 0 24;
-    background-color: rgb(18, 18, 18);
+main {
+    display: flex;
+    margin : 128px 32px 128px 32px;
 }
 
-/*-------------------------------------------------- IMPRESSUM --------------------------------------------------*/
-/*--------------------*/
+.title,
+.content {
+    color     : rgb(255, 255, 255);
+    width     : 50%;
+    box-sizing: border-box;
+}
+
+.content {
+    padding-left: 64px;
+}
+
 .impressum {
     display       : flex;
     flex-direction: column;
@@ -98,9 +124,10 @@ li {
     padding-bottom: 10vh;
 }
 
-
-/*--------------------*/
 .imgTypo {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
     margin-bottom   : 320;
     padding-top     : 32;
     padding-bottom  : 24;
@@ -108,50 +135,45 @@ li {
     background-color: rgb(18, 18, 18);
 }
 
-
-/*--------------------*/
 .impressum img {
     width     : 50vh;
     max-height: auto;
 }
 
-
-/*-------------------------------------------------- NAVIGATION --------------------------------------------------*/
-/*--------------------*/
 .slogan {
-    display            : flex;
-    flex-wrap          : wrap;
-    align-items        : baseline;
-    padding-top        : 160px;
-    padding-bottom     : 60vh;
-    /* background-color: rgb(18, 18, 18); */
+    display       : flex;
+    flex-wrap     : wrap;
+    align-items   : baseline;
+    padding-top   : 120px;
+    padding-bottom: 60vh;
 }
 
-
-/*--------------------*/
 .slogan-detail {
-    display            : flex;
-    flex-wrap          : wrap;
-    align-items        : baseline;
-    padding-top        : 160;
-    padding-bottom     : 100vh;
-    /* background-color: rgb(18, 18, 18); */
+    display    : flex;
+    flex-wrap  : wrap;
+    align-items: baseline;
+    padding-top: 120px;
 }
 
-
-/*-------------------------------------------------- FOOTER --------------------------------------------------*/
-/*--------------------*/
 footer {
     position        : sticky;
     display         : flex;
-    width           : 100%;
-    bottom          : 0;
-    margin          : 0;
+    margin          : 120px 32px 0px 32px;
     background-color: rgb(18, 18, 18);
+    position        : fixed;
+    bottom          : 0;
+    left            : 0;
+    width           : 100%;
+    box-sizing      : border-box;
+    text-align      : center;
 }
 
-/*--------------------*/
-.footerItem {
+footer a {
+    font-size  : 1rem;
+    font-weight: 100;
+}
+
+footer>div {
     width           : 100%;
     margin-bottom   : 2rem;
     text-align      : left;
@@ -159,9 +181,10 @@ footer {
     flex-direction  : column;
     background-color: rgb(18, 18, 18);
     word-wrap       : break-word;
+    color           : rgb(238, 238, 238);
+    font-family     : "Manrope", sans-serif;
 }
 
-/*-------------------------------------------------- TYPO +750 --------------------------------------------------*/
 :root {
     font-size: 16px;
 }
@@ -178,28 +201,21 @@ H6 {
     font-style : normal;
 }
 
-
-/*--------------------*/
-/* p2{
-  font-family: "Manrope", sans-serif;
-  font-size: 1rem;
-  font-weight:100;
-  font-style: normal;
-  padding-right: 16px;
-  color: rgb(136, 29, 29);
-  white-space: normal;
-} */
-
-
-/*--------------------*/
 p {
-    color      : rgb(255, 255, 255);
-    font-family: "Manrope", sans-serif;
+    font-family       : "Manrope", sans-serif;
+    font-size         : 1.5rem;
+    font-weight       : 100;
+    font-style        : normal;
+    margin-block-start: 0;
+}
+
+a {
+    color      : rgb(238, 238, 238);
+    
     font-size  : 1.5rem;
     font-weight: 100;
     font-style : normal;
 }
-
 
 h1,
 .navigation-item {
@@ -209,9 +225,9 @@ h1,
     background-color: rgb(18, 18, 18);
     padding-right   : 24px;
     margin-bottom   : 8px;
+    text-decoration : none;
 }
 
-/*--------------------*/
 h2 {
     font-size       : 4rem;
     color           : rgb(0, 0, 0);
@@ -222,7 +238,6 @@ h2 {
     margin-bottom   : 8px;
 }
 
-/*--------------------*/
 small {
     color          : rgb(238, 238, 238);
     font-family    : "Manrope", sans-serif;
@@ -233,18 +248,6 @@ small {
     white-space    : nowrap;
 }
 
-
-a {
-    color          : rgb(238, 238, 238);
-    font-family    : "Manrope", sans-serif;
-    font-size      : 1.5rem;
-    font-weight    : 100;
-    font-style     : normal;
-    text-decoration: underline;
-}
-
-
-/*--------------------*/
 label {
     background-color: rgb(18, 18, 18);
     font-family     : "Manrope", sans-serif;
@@ -255,19 +258,44 @@ label {
     white-space     : nowrap;
 }
 
-
-
-
-/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
 @media screen and (max-width: 768px) {
     html {
-        padding-right      : 0px;
-        padding-left       : 0px;
-        /* background-color: rgb(119, 48, 48); */
+        padding-right: 0px;
+        padding-left : 0px;
     }
 
+    nav ul li a {
+        font-size: 2.4rem;
+    }
 
-    /*--------------------*/
+    nav ul li:not(:last-child)::after {
+        font-size: 2.4rem;
+    }
+
+    nav ul li:last-child::after {
+        font-size: 2.4rem;
+    }
+
+    main {
+        flex-direction  : column;
+        background-color: rgb(18, 18, 18);
+        margin          : 120px 0px 0px 0px;
+    }
+
+    .title,
+    .content {
+        width     : 100%;
+        box-sizing: border-box;
+    }
+
+    .title {
+        padding-left: 16px;
+    }
+
+    .content {
+        padding: 24px 16px 0px 16px;
+    }
+
     .card {
         position        : relative;
         top             : 0px;
@@ -282,54 +310,34 @@ label {
         background-color: rgb(18, 18, 18);
     }
 
-
-    /*--------------------*/
     .slogan {
         padding-top   : 100px;
         width         : 85%;
         padding-left  : 0;
         padding-right : 0;
         padding-bottom: 40vh;
-
-        /* background-color: rgb(224, 39, 39); */
-        /* padding-top: 24px; */
     }
 
     .slogan-detail {
-        padding-top        : 100px;
-        width              : 85%;
-        padding-bottom     : 1vh;
-        /* background-color: rgb(224, 39, 39); */
+        padding-top   : 100px;
+        width         : 85%;
+        padding-bottom: 1vh;
     }
 
-
-    /*--------------------*/
-    .content {
-        padding-left       : 16px;
-        padding-right      : 16px;
-        /* background-color: rgb(43, 255, 195); */
-    }
-
-    /*--------------------*/
     footer {
-        display            : flex;
-        flex-direction     : column;
-        display            : flex;
-        position           : static;
-        padding-bottom     : 0px;
-        margin-bottom      : 0px;
-        width              : 90%;
-        /* background-color: rgb(43, 255, 195); */
+        display       : flex;
+        flex-direction: column;
+        display       : flex;
+        position      : static;
+        margin        : 120px 16px 64px 16px;
     }
 
-
-    /*--------------------*/
     h1,
     h2,
     h3,
-    H4,
-    H5,
-    H6 {
+    h4,
+    h5,
+    h6 {
         font-family  : "Manrope", sans-serif;
         font-weight  : 200;
         font-style   : normal;
@@ -345,8 +353,6 @@ label {
         margin-bottom   : 8px;
     }
 
-
-    /*--------------------*/
     h2 {
         font-size       : 5rem;
         color           : rgb(0, 0, 0);
@@ -357,33 +363,15 @@ label {
         margin-bottom   : 8px;
     }
 
-    s
-
-    /*--------------------*/
     a {
-        color          : rgb(238, 238, 238);
-        font-family    : "Manrope", sans-serif;
-        font-size      : 1.5rem;
-        font-weight    : 100;
-        font-style     : normal;
-        text-decoration: none;
-        white-space    : nowrap;
-    }
-
-
-    /*--------------------*/
-    small {
         color      : rgb(238, 238, 238);
         font-family: "Manrope", sans-serif;
-
-        font-weight    : 100;
-        font-style     : normal;
-        text-decoration: none;
-        white-space    : nowrap;
+        font-size  : 1.5rem;
+        font-weight: 100;
+        font-style : normal;
+        white-space: nowrap;
     }
 
-
-    /*--------------------*/
     .subheader-page {
         display         : flex;
         position        : sticky;
@@ -395,32 +383,23 @@ label {
         padding-bottom  : 32px;
     }
 
-    /*--------------------*/
     .close {
         position: absolute;
         right   : 32px;
     }
 
-
-    /*--------------------*/
     .lineHeight {
         line-height: 2rem;
     }
 
 }
 
-
-
-
-/*-------------------------------------------------- RESPONSIVE STYLES --------------------------------------------------*/
 @media screen and (max-width: 920px) {
     html {
         padding-right: 0px;
         padding-left : 0px;
     }
 
-
-    /*--------------------*/
     h1,
     h2,
     h3,
@@ -433,7 +412,6 @@ label {
         padding-right: 16px;
     }
 
-
     h1,
     .navigation-item {
         display         : inline;
@@ -441,10 +419,9 @@ label {
         color           : rgb(238, 238, 238);
         background-color: rgb(18, 18, 18);
         margin-bottom   : 8px;
+        text-decoration : none;
     }
 
-
-    /*--------------------*/
     h2 {
         font-size       : 2.4rem;
         color           : rgb(0, 0, 0);
