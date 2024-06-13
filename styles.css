@@ -72,10 +72,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-.contact {
-    font-size: 1.5rem;
-}
-
 nav ul li a:hover {
     text-decoration: underline;
 }
@@ -133,6 +129,7 @@ main {
     padding-bottom  : 24;
     width           : 50vh;
     background-color: rgb(18, 18, 18);
+    color     : rgb(255, 255, 255);
 }
 
 .impressum img {
